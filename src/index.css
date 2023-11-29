@@ -46,7 +46,13 @@ a:hover {
   text-decoration: underline;
 }
 
+.black__underline:hover {
+  text-decoration-color: #242424 !important;
+}
 
+.no__underline:hover {
+  text-decoration: none;
+}
 
 ul {
   display: flex;
@@ -67,6 +73,7 @@ h2 {
   font-size: 32px;
   margin-bottom: 32px;
   text-align: center;
+  color: #1769d2;
 }
 
 button {
@@ -685,6 +692,7 @@ select {
 .book__selected--title--top {
   margin-left: 10px;
   margin-bottom: 0;
+  color: #242424;
 }
 
 .book__summary {
