@@ -1,19 +1,27 @@
-import Nav from './components/Nav';
-import Landing from './components/Landing';
-import Highlights from './components/Highlights'
-import Featured from './components/Featured'
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Footer from "./Footer";
+import Books from "./pages/Books";
+import BookInfo from "./pages/BookInfo";
+import { books } from "./data";
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Nav/>
-      <Landing/>
-      <Highlights/>
-      <Featured/>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Route path="/" exact component={Home}/>
+        <Route path="/books" render={() => <Books books={books} />}/>
+        <Route path="/books1" render={() => <BookInfo books={books}/>}/>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
-// 6:37 
 
 export default App;

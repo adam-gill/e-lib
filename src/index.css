@@ -208,7 +208,7 @@ button:active {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -220,7 +220,7 @@ button:active {
 }
 
 .menu--open {
-  max-height: 100vh;
+  max-height: 40vh;
   overflow: hidden;
 }
 
@@ -232,17 +232,25 @@ button:active {
 
 .menu__links {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .menu__list {
+  height: 100%;
   padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .menu__link {
   color: white;
   font-size: 40px;
+  padding: 2vh;
 }
 
 .btn__menu--close {
@@ -506,6 +514,32 @@ footer {
 
 .footer__logo {
   display: flex;
+}
+
+.logo__holder--white {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  margin: 0;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.footer__logo--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__text--white {
+  color: white;
+}
+
+.white {
+  color: white;
 }
 
 .footer__logo--img {

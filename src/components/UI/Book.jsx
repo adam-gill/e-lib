@@ -1,25 +1,29 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
 
 const Book = ({ book }) => {
   return (
     <div className="book">
-      <a href="">
+      <Link to="/">
         <figure className="book__img--wrapper">
           <img src={book.url} alt="" />
         </figure>
-      </a>
+      </Link>
       <div className="book__title">
-        <a href="/" className="book__title--link">
+        <Link to="/" className="book__title--link">
           {book.title}
-        </a>
+        </Link>
       </div>
       <div className="book__ratings">
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star" />
-        <FontAwesomeIcon icon="star-half-alt" />
+        {
+          new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon="star" key={index}/>)
+        }
+        {
+          !Number.isInteger(book.rating) && <FontAwesomeIcon icon="star-half-alt" />
+        }
+        {/* if first is true ^ it does the first, else the second */}
       </div>
       <div className="book__price">
         {book.salePrice ? (
@@ -39,6 +43,5 @@ const Book = ({ book }) => {
   );
 };
 
-// 40:31
 
 export default Book;
