@@ -499,7 +499,7 @@ EXPLORE
 */
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #6eb5f85d;
 }
 
 /* 
@@ -532,6 +532,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none !important;
 }
 
 .logo__text--white {

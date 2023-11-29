@@ -4,10 +4,7 @@ import Footer from "./Footer";
 import Books from "./pages/Books";
 import BookInfo from "./pages/BookInfo";
 import { books } from "./data";
-import {
-  BrowserRouter as Router,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom/cjs/react-router-dom.min";
 
 function App() {
   return (
