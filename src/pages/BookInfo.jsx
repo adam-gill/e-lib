@@ -1,16 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router";
 import Rating from "../components/UI/Rating";
 import Price from "../components/UI/Price";
 import Book from "../components/UI/Book";
 
 const BookInfo = ({ books }) => {
     const { id } = useParams();
-    const book = books.find(book => +book.id === +id);
-    console.log(book)
-    console.log('hi')
-
+    const book = books.find((book) => +book.id === +id);
+    
+    
   return (
     <div id="books__body">
       <main id="books__main">
@@ -20,7 +20,7 @@ const BookInfo = ({ books }) => {
               <Link to="/books" className="book__link">
                 <FontAwesomeIcon icon="arrow-left" />
               </Link>
-              <Link to="/books" className="no__underline">
+              <Link to="/books" className="book__link">
                 <h2 className="book__selected--title--top">Books</h2>
               </Link>
             </div>
