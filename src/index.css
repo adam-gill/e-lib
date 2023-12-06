@@ -636,11 +636,11 @@ select {
   }
 }
 
-/* 
+.book__and--description {
+  display: flex;
+  
 
-  book/:id
-    
-*/
+}
 
 .container__book--selected {
   padding-top: 16px;
