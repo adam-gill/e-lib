@@ -2,7 +2,7 @@
 export const books = [
   {
     id: 1,
-    title: "Crack the Coding Interview",
+    title: "Cracking the Coding Interview",
     url: "https://covers.openlibrary.org/b/id/8091016-L.jpg",
     originalPrice: 49.95,
     salePrice: 14.95,
