@@ -369,6 +369,10 @@ HIGHLIGHTS
   bottom: 1px;
 }
 
+.black {
+  color: #000;
+}
+
 .highlight__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -455,6 +459,7 @@ FEATURES
 .book__title--skeleton {
   height: 21px;
   width: 100%;
+  max-width: 250px;
 }
 
 .book__rating--skeleton {
@@ -821,7 +826,7 @@ select {
 }
 
 .total__sub-total {
-  border-top: 2px solid #7342d6;
+  border-top: 2px solid #000;
   padding-top: 24px;
 }
 
